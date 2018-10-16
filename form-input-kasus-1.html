@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Input Kasus 1</title>
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+</head>
+<body>
+<div style="height:5vh;"></div>
+<div class="row">
+    <div class="column column-33 column-offset-33">
+        <h2>Kasus 1</h2>
+        <p>Menampilkan field Nama, Tanggal Lahir, Jenis Kelamin dan Agama</p>
+        <!-- BEGIN FORM -->
+        <form action="form-process-kasus-1.php" method="GET">
+
+            <div>
+                <label for="txtNama">Nama</label>
+                <input type="text" id="txtNama" name="nama">
+            </div>
+            <div>
+                <label for="txtTL">Tanggal Lahir</label>
+                <input type="date" id="txtTL" name="tanggal_lahir">
+            </div>
+            <div>
+                <label for="txtKelaminL">Jenis Kelamin</label>
+                <label style="font-weight:normal;"><input type="radio" id="txtKelaminL" name="jenis_kelamin" value="L">
+                    Laki-Laki</label>
+                <label style="font-weight:normal;"><input type="radio" id="txtKelaminP" name="jenis_kelamin" value="P">
+                    Perempuan</label>
+            </div>
+            <div>
+                <label for="txtAgama">Agama</label>
+                <select name="agama" id="txtAgama">
+                    <option value="">&mdash; Pilih Agama &mdash;</option>
+                    <option value="islam">Islam</option>
+                    <option value="protestan">Kristen Protestan</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="buddha">Buddha</option>
+                    <option value="konghucu">Kong Hu Cu</option>
+                </select>
+            </div>
+            <hr>
+            <!-- BUTTON ACTION -->
+            <div style="text-align: center;">
+                <button class="button button-primary" type="submit">Kirim</button>
+                &middot;
+                <input class="button button-outline" type="reset" value="Reset">
+            </div>
+        </form>
+        <!-- END FORM -->
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Input Kasus 2</title>
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+</head>
+<body>
+<div style="height:5vh;"></div>
+<div class="row">
+    <div class="column column-33 column-offset-33">
+        <h2>Kasus 2</h2>
+        <p>Menampilkan field Nama, Hobi dan Skill</p>
+        <!-- BEGIN FORM -->
+        <form action="form-process-kasus-2.php" method="GET">
+            <div>
+                <label for="txtNama">Nama</label>
+                <input type="text" id="txtNama" name="nama">
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="txtHobi0">Pilih Hobi</label>
+                    <label style="font-weight:normal;"><input type="checkbox" id="txtHobi0" name="hobi[]" value="A">
+                        Yoga</label>
+                    <label style="font-weight:normal;"><input type="checkbox" id="txtHobi1" name="hobi[]" value="B">
+                        Bermain Musik</label>
+                    <label style="font-weight:normal;"><input type="checkbox" id="txtHobi2" name="hobi[]" value="C">
+                        Belajar Bahasa Asing</label>
+                    <label style="font-weight:normal;"><input type="checkbox" id="txtHobi3" name="hobi[]" value="D">
+                        Membaca</label>
+                    <label style="font-weight:normal;"><input type="checkbox" id="txtHobi4" name="hobi[]" value="E">
+                        Gadget</label>
+                    <label style="font-weight:normal;"><input type="checkbox" id="txtHobi5" name="hobi[]" value="F">
+                        Menulis</label>
+                    <label style="font-weight:normal;"><input type="checkbox" id="txtHobi6" name="hobi[]" value="G">
+                        Fotografi</label>
+                    <label style="font-weight:normal;"><input type="checkbox" id="txtHobi7" name="hobi[]" value="H">
+                        Olahraga</label>
+                </div>
+                <div class="column">
+                    <label for="txtSkill0">Pilih Skill</label>
+                    <label style="font-weight:normal;"><input type="checkbox" id="txtSkill0" name="skill[]" value="A">
+                        Profesionalitas
+                    </label>
+                    <label style="font-weight:normal;"><input type="checkbox" id="txtSkill1" name="skill[]" value="B">
+                        Public Speaking</label>
+                    <label style="font-weight:normal;"><input type="checkbox" id="txtSkill2" name="skill[]" value="C">
+                        Problem Solver</label>
+                    <label style="font-weight:normal;"><input type="checkbox" id="txtSkill3" name="skill[]" value="D">
+                        Open Minded</label>
+                </div>
+            </div>
+            <hr>
+            <!-- BUTTON ACTION -->
+            <div style="text-align: center;">
+                <button class="button button-primary" type="submit">Kirim</button>
+                &middot;
+                <input class="button button-outline" type="reset" value="Reset">
+            </div>
+        </form>
+        <!-- END FORM -->
+    </div>
+</div>
+</body>
+</html>
